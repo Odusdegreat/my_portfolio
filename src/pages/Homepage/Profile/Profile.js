@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../../../assets/images/kenny.JPEG";
+import odus from "../../../assets/images/oduspic.jpg";
 import SocialLinks from "../../../components/SocialLinks";
 
 const Profile = () => {
@@ -13,17 +13,13 @@ const Profile = () => {
       </div>
       {/* <p className='text-center text-[8rem]'>👨🏽‍💻</p> */}
       <img
-        src={profile}
+        src={odus}
         alt=""
         className="h-[250px] w-[250px] object-cover rounded-3xl mx-auto"
       />
       <div className="flex flex-col items-center">
-        <h2 className="text-white text-lg text-white mt-8">
-          tobiodubote@gmail.com
-        </h2>
-        <h2 className="text-white text-lg text-white mt-2 mb-6">
-          Lagos, Nigeria
-        </h2>
+        <h2 className="text-white text-lg  mt-8">tobiodubote@gmail.com</h2>
+        <h2 className="text-white text-lg  mt-2 mb-6">Lagos, Nigeria</h2>
 
         {/* SOCIAL MEDIA ICONS */}
         <SocialLinks />
