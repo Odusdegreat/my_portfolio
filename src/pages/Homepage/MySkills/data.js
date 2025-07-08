@@ -1,14 +1,38 @@
 export const skillsData = [
   {
-    setsName: "Mobile",
+    setsName: "Frontend",
     skillSet: [
       {
-        icon: "flutter.png",
-        name: "Flutter",
+        icon: "html.png",
+        name: "Html",
       },
       {
-        icon: "dart.png",
-        name: "Dart",
+        icon: "css.webp",
+        name: "Css",
+      },
+      {
+        icon: "js.png",
+        name: "Javascript",
+      },
+      {
+        icon: "react.png",
+        name: "React",
+      },
+      {
+        icon: "next.png",
+        name: "Next.js",
+      },
+      {
+        icon: "typescript.png",
+        name: "TypeScript",
+      },
+      {
+        icon: "angular.png",
+        name: "Angular",
+      },
+      {
+        icon: "tailwind.png",
+        name: "Tailwind CSS",
       },
       {
         icon: "figma.png",
@@ -16,23 +40,7 @@ export const skillsData = [
       },
       {
         icon: "rest.png",
-        name: "REST",
-      },
-      {
-        icon: "graphql.png",
-        name: "GraphQL",
-      },
-      {
-        icon: "js.png",
-        name: "Javascript",
-      },
-      {
-        icon: "firebase.webp",
-        name: "Firebase",
-      },
-      {
-        icon: "python.svg",
-        name: "Python",
+        name: "REST API",
       },
     ],
   },
@@ -40,16 +48,16 @@ export const skillsData = [
     setsName: "Database",
     skillSet: [
       {
-        icon: "mongodb.png",
-        name: "MongoDB",
+        icon: "firebase.webp",
+        name: "Firebase",
+      },
+      {
+        icon: "supabase.webp",
+        name: "Supabase",
       },
       {
         icon: "postgresql.png",
         name: "PostgreSQL",
-      },
-      {
-        icon: "mysql.png",
-        name: "MySQL",
       },
     ],
   },
