@@ -10,13 +10,13 @@ const Services = () => {
       id: 1,
       service: "Frontend Development",
       details:
-        "I specialize in front-end development using modern frameworks and tools such as React, Next.js, Angular, and React Native to build fast, scalable, and responsive web and mobile applications. My foundation in core technologies like HTML, CSS, JavaScript, and TypeScript enables me to craft clean, maintainable code. I use Tailwind CSS for efficient styling and Figma to design and translate user-friendly interfaces. I also apply state management solutions like Redux Toolkit, Context API, and Angular Services, combined with a modular architecture to ensure high performance, reusability, and scalability across all projects.",
+        "I specialize in front-end development with React, Next.js, Angular, and React Native building fast, scalable web and mobile apps. With a strong foundation in HTML, CSS, JavaScript, and TypeScript, I write clean, maintainable code. I use Tailwind CSS for styling, Figma for UI design, and manage state with Redux Toolkit, Context API, and Angular Services to ensure performance and scalability.",
     },
     {
       id: 2,
       service: "Database Management",
       details:
-        "I have hands-on experience using Firebase (Firestore and Realtime Database) for real-time syncing and authentication in both mobile and web applications. I’ve also worked with Supabase, leveraging its PostgreSQL foundation for building scalable, relational data structures. Additionally, I’ve used SQLite in Django-based projects and have explored MongoDB and PostgreSQL for flexible and robust backend solutions, depending on project requirements.",
+        "I’ve worked with Firebase (Firestore and Realtime Database) for real-time syncing and auth in mobile and web apps. I also use Supabase for scalable relational data, and have experience with SQLite, MongoDB, and PostgreSQL for flexible backend solutions based on project needs.",
     },
     {
       id: 3,
