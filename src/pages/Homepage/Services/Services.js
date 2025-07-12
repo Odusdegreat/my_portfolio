@@ -10,19 +10,13 @@ const Services = () => {
       id: 1,
       service: "Frontend Development",
       details:
-        "I specialize in front-end development with React, Next.js, Angular, and React Native building fast, scalable web and mobile apps. With a strong foundation in HTML, CSS, JavaScript, and TypeScript, I write clean, maintainable code. I use Tailwind CSS for styling, Figma for UI design, and manage state with Redux Toolkit, Context API, and Angular Services to ensure performance and scalability.",
+        "I’m a front-end developer specializing in React, Next.js, Angular, and React Native. I build fast, scalable web and mobile apps using clean, maintainable code with HTML, CSS, JavaScript, and TypeScript. I style with Tailwind CSS, design in Figma, and manage state with Redux Toolkit, Context API, and Angular Services.",
     },
     {
       id: 2,
       service: "Database Management",
       details:
         "I’ve worked with Firebase (Firestore and Realtime Database) for real-time syncing and auth in mobile and web apps. I also use Supabase for scalable relational data, and have experience with SQLite, MongoDB, and PostgreSQL for flexible backend solutions based on project needs.",
-    },
-    {
-      id: 3,
-      service: "Firebase",
-      details:
-        "I have expertise in working with Firebase to build robust, real-time mobile applications. I can effectively integrate Firebase services, such as Firestore, Firebase Authentication, and Cloud Functions, into Flutter applications to enhance functionality and user experience. My ability to design and implement scalable backend systems using Firebase ensures seamless data synchronization and user authentication. I write clean and efficient code, leveraging my understanding of data structures, algorithms, and system design to deliver performant, real-time applications.",
     },
   ];
   const props = {

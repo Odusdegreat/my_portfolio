@@ -11,13 +11,13 @@ const MobileProjects = () => {
   const projects = mobileProjectData;
   const props = {
     img: "https://cdn.lordicon.com/fpmskzsv.json",
-    text: "Mobile Apps",
+    text: "My Projects",
   };
   return (
     <section id="projects" className="mb-20">
       <SectionTitle props={props} />
       <SectionHead>
-        Mobile <span className="text-primary">Apps</span>
+        My<span className="text-primary"> Projects</span>
       </SectionHead>
       <div className="projects">
         {projects?.slice(0, 4).map((project, index) => (
@@ -34,7 +34,7 @@ const MobileProjects = () => {
           to="/projects/mobile"
           className="text-xl flex items-center gap-2 icon hover:text-primary transition duration-300"
         >
-          All Mobile Projects
+          All Web Projects
           <lord-icon
             target="a"
             src="https://cdn.lordicon.com/zmkotitn.json"
