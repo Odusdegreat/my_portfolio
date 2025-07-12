@@ -14,7 +14,7 @@ const MobileNav = () => {
         <span className="text-xs">Home</span>
       </Link>
       <a
-        href="https://drive.google.com/file/d/1Ew89bUbzO2SCMpSGLZ7ZUvcywRtzAhEb/view?usp=sharing"
+        href="https://docs.google.com/document/d/1exbVtHR29vz7ALWcVdRg4xx_qeFrnw60fgA_pReKmmE/edit?usp=sharing"
         target="_blank"
         rel="noreferrer"
         className="icon flex flex-col items-center gap-1"

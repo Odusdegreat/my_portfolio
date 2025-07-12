@@ -1,10 +1,10 @@
 export const projectData = [
   {
-    name: "Fago Pay",
-    img: "pinoy.png",
-    liveLink: "https://play.google.com/store/search?q=fagopay&c=apps&hl=en",
+    name: "Farm Link",
+    img: "farmlink.png",
+    liveLink: "https://farm-link-phi.vercel.app/",
     description:
-      "Find your next car with PinoyUsedCars! Our app provides a seamless and user-friendly experience for browsing a wide range of high-quality pre-owned vehicles.",
+      "Farmlink is a web-based agri-tech platform that connects smallholder farmers directly with buyers, cutting out middlemen and increasing profits for both parties. The platform allows farmers to list their produce, track demand, and schedule deliveries seamlessly.",
   },
   {
     name: "MegazApp",
@@ -31,19 +31,17 @@ export const projectData = [
 
 export const mobileProjectData = [
   {
-    name: "Fago Pay",
-    img: "fagopay.png",
+    name: "Farm Link",
+    img: "farmlink.png",
     iosLink: "https://apps.apple.com/ng/app/fagopay/id6449773373",
-    androidLink: "https://play.google.com/store/search?q=fagopay&c=apps&hl=en",
     description:
-      "Fagopay is a digital app for business and individauls to spend and receive money conveniently",
+      "Connects farmers directly with buyers through real-time listings and order tracking, improving market access and reducing middlemen.",
   },
   {
     name: "MegazApp",
     img: "megaz.png",
     iosLink: "https://apps.apple.com/ng/app/megazapp/id6590635149",
-    androidLink:
-      "https://play.google.com/store/search?q=megazapp&c=apps&hl=en",
+    androidLink: "https://play.google.com/store/search?q=megazapp&c=apps&hl=en",
     description:
       "Convert your airtime to cash, buy airtime and data at a very affordable rate instantly at any time of the day with MegazApp.",
   },
@@ -71,7 +69,6 @@ export const mobileProjectData = [
     iosLink: "https://apps.apple.com/ng/app/searchkee/id1658787073",
     androidLink:
       "https://play.google.com/store/apps/details?id=com.damageauto.flipanycommercial&hl=en&gl=US",
-    description:
-      "A community of buyers, sellers, and service providers.",
+    description: "A community of buyers, sellers, and service providers.",
   },
 ];

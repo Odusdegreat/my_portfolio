@@ -1,12 +1,11 @@
 export const projectData = [
   {
-    name: "Search Kee",
+    name: "Endowpay",
     img: "searchkee.png",
     iosLink: "https://apps.apple.com/ng/app/searchkee/id1658787073",
     androidLink:
       "https://play.google.com/store/apps/details?id=com.damageauto.flipanycommercial&hl=en&gl=US",
-    description:
-      "A community of buyers, sellers, and service providers.",
+    description: "A community of buyers, sellers, and service providers.",
   },
   // {
   //   name: "Cars UAE MARKET",
@@ -33,39 +32,37 @@ export const projectData = [
 
 export const mobileProjectData = [
   {
-    name: "Fago Pay",
-    img: "fagopay.png",
+    name: "Farm Link",
+    img: "farmlink.png",
     iosLink: "https://apps.apple.com/ng/app/fagopay/id6449773373",
     androidLink: "https://play.google.com/store/search?q=fagopay&c=apps&hl=en",
     description:
-      "Fagopay is a digital app for business and individauls to spend and receive money conveniently",
+      "Farm Link connects farmers directly with buyers through real-time listings and order tracking, improving market access and reducing middlemen.",
   },
   {
-    name: "MegazApp",
-    img: "megaz.png",
+    name: "Fast React Pizza Co",
+    img: "pizza.png",
     iosLink: "https://apps.apple.com/ng/app/megazapp/id6590635149",
-    androidLink:
-      "https://play.google.com/store/search?q=megazapp&c=apps&hl=en",
+    androidLink: "https://play.google.com/store/search?q=megazapp&c=apps&hl=en",
     description:
-      "Convert your airtime to cash, buy airtime and data at a very affordable rate instantly at any time of the day with MegazApp.",
+      "An online pizza ordering platform with an interactive menu, customizable orders, real-time cart updates, and a smooth checkout flow. Designed to enhance user experience and streamline food ordering.",
   },
   {
-    name: "Karot Parent",
-    img: "karotparent.png",
+    name: "Music Player",
+    img: "musicplayer.png",
     iosLink: "https://apps.apple.com/ng/app/karot-student/id6502534338",
     androidLink:
       "https://play.google.com/store/apps/details?id=com.karot.karot_mobile_app&hl=en",
     description:
-      "Karot Parent: Empower Your Child’s Learning Journey! Karot Parent is the perfect companion app to Karot Student, designed specifically for parents to support and enhance their child’s educational experience. With Karot Parent, you can register your child, assign tasks, access educational content, and even attempt questions to stay engaged in your child’s learning process.",
+      "An interactive web-based music player that allows users to browse songs, play tracks, view albums and artists, and manage playlists. Built for a smooth, responsive experience with intuitive controls and clean design.",
   },
   {
-    name: "Karot Student",
-    img: "karotstudent.png",
+    name: "Fundify",
+    img: "Fundify (2).png",
     iosLink: "https://apps.apple.com/ng/app/karot-student/id6502534338",
     androidLink:
       "https://play.google.com/store/apps/details?id=com.karot.karot_student_app&hl=en",
     description:
-      "Karot Student: Learn, Play, and Grow! Welcome to Karot Student, the ultimate educational app designed to make learning fun and interactive for children. Karot Student offers a rich library of educational content, engaging quizzes, interactive tasks, and a vibrant community to enhance your child’s learning journey.",
+      "A modern wallet and crowdfunding app design featuring crypto integration, sleek dashboards, transaction history, and intuitive user flow for seamless financial management.",
   },
-  
 ];
