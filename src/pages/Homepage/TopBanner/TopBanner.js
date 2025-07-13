@@ -10,8 +10,8 @@ const TopBanner = () => {
     <section id="home" className="mb-32">
       <SectionTitle props={props} />
       <h1 className="lg:text-[65px] lg:leading-[75px] md:text-[50px] md:leading-[60px] text-[28px] leading-[40px]">
-        Hey! I'm <span className="text-primary">Oluwatobi</span>,<br /> A
-        Frontend Developer.
+        Hey! I'm <span className="text-primary">Oluwatobi Odubote</span>,<br />{" "}
+        A Frontend Developer.
       </h1>
       <p className="mt-6 lg:text-2xl md:text-2xl text-md"></p>
       <div className="flex lg:flex-row md:flex-row flex-col justify-between lg:items-end md:items-end items-center">
