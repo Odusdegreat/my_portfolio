@@ -29,21 +29,7 @@ const MobileProjects = () => {
           />
         ))}
       </div>
-      <div className="mt-16 flex justify-end">
-        <Link
-          to="/projects/mobile"
-          className="text-xl flex items-center gap-2 icon hover:text-primary transition duration-300"
-        >
-          All Web Projects
-          <lord-icon
-            target="a"
-            src="https://cdn.lordicon.com/zmkotitn.json"
-            trigger="hover"
-            class="current-color"
-            style={{ width: "25px", height: "25px", margintTop: "4px" }}
-          ></lord-icon>
-        </Link>
-      </div>
+
       <ProjectModal data={modal} setModal={setModal} />
     </section>
   );

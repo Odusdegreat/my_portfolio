@@ -1,36 +1,54 @@
-import React, { useState } from 'react'
-import SectionTitle from '../../components/Typography/SectionTitle'
-import SectionHead from '../../components/Typography/SectionHead'
-import ProjectCard from '../../components/Cards/ProjectCard'
-import { useParams } from 'react-router-dom'
-import useTitle from '../../hooks/useTitle'
-import ProjectModal from '../../components/Modals/ProjectModal'
-import { projectData, mobileProjectData } from './data'
+export const projectData = [
+  {
+    name: "Endowpay",
+    img: "endowpay.png",
+    liveLink: "https://endowpay-customerapp.onrender.com/",
+    description:
+      "EndowPay is a digital finance platform that enables users to make fast, secure payments, transfer money seamlessly, and pay utility bills with ease all in one intuitive experience.",
+  },
+  // You can uncomment and add more projects here as needed
+  // {
+  //   name: "Cars UAE MARKET",
+  //   img: "carsuaemarket.png",
+  //   liveLink: "https://www.carsuaemarket.com/en",
+  //   description: "...",
+  // },
+];
 
-const ProjectPage = () => {
-    useTitle('Projects')
-    const [modal, setModal] = useState([])
-    const projects = projectData;
-    const mobileProjects = mobileProjectData;
-    const props = { img: "https://cdn.lordicon.com/fpmskzsv.json", text: "Projects" }
-
-    const { id } = useParams();
-
-    return (
-        <section>
-            <SectionTitle props={props} />
-            <SectionHead>My <span className='text-primary'>Projects</span></SectionHead>
-
-            <div className='projects'>
-                {id === 'web' ? (
-                    projects?.map((project, index) => <ProjectCard key={index} project={project} index={index} setModal={setModal} />)
-                ): (
-                    mobileProjects?.map((project, index) => <ProjectCard key={index} project={project} index={index} setModal={setModal} />)
-                )}
-            </div>
-            <ProjectModal data={modal} setModal={setModal} />
-        </section>
-    )
-}
-
-export default ProjectPage
+export const mobileProjectData = [
+  {
+    name: "Farm Link",
+    img: "farmlink.png",
+    description:
+      "Farmlink is a web-based agri-tech platform that connects smallholder farmers directly with buyers, cutting out middlemen and increasing profits for both parties. The platform allows farmers to list their produce, track demand, and schedule deliveries seamlessly.",
+    liveLink: "https://farm-link-phi.vercel.app/",
+  },
+  {
+    name: "Fast React Pizza Co",
+    img: "pizza.png",
+    description:
+      "An online pizza ordering platform with an interactive menu, customizable orders, real-time cart updates, and a smooth checkout flow. Designed to enhance user experience and streamline food ordering.",
+    liveLink: "https://fast-react-pizza.netlify.app/",
+  },
+  {
+    name: "Music Player",
+    img: "musicplayer.png",
+    description:
+      "An interactive web-based music player that allows users to browse songs, play tracks, view albums and artists, and manage playlists. Built for a smooth, responsive experience with intuitive controls and clean design.",
+    liveLink: "https://musicplayer-ui.vercel.app/",
+  },
+  {
+    name: "Fundify",
+    img: "Fundify (2).png",
+    description:
+      "A modern wallet and crowdfunding app design featuring crypto integration, sleek dashboards, transaction history, and intuitive user flow for seamless financial management.",
+    liveLink: "https://fundify-design.vercel.app/",
+  },
+  {
+    name: "Endowpay",
+    img: "endowpay.png",
+    description:
+      "EndowPay is a digital finance platform that enables users to make fast, secure payments, transfer money seamlessly, and pay utility bills with ease all in one intuitive experience.",
+    liveLink: "https://endowpay.vercel.app/",
+  },
+];
