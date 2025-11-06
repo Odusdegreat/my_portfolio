@@ -18,6 +18,7 @@ export const skillsData = [
         icon: "react.png",
         name: "React",
       },
+
       {
         icon: "next.png",
         name: "Next.js",
@@ -41,6 +42,24 @@ export const skillsData = [
       {
         icon: "rest.png",
         name: "REST API",
+      },
+    ],
+  },
+
+  {
+    setsName: "Mobile",
+    skillSet: [
+      {
+        icon: "react.png",
+        name: "React Native",
+      },
+      {
+        icon: "expo.png",
+        name: "Expo",
+      },
+      {
+        icon: "nativewind.jpg",
+        name: "NativeWind",
       },
     ],
   },

@@ -6,9 +6,7 @@ const Profile = () => {
   return (
     <div className="lg:w-[380px] border-[1px] border-[#bbb] rounded-3xl px-6 py-10 sticky top-16">
       <div className="flex justify-between mb-6">
-        <h2 className="text-white text-4xl font-bold text-[#03C988]">
-          Oluwatobi
-        </h2>
+        <h2 className=" text-4xl font-bold text-[#03C988]">Oluwatobi</h2>
         <h2 className="text-white leading-[20px]">Software Engineer</h2>
       </div>
       {/* <p className='text-center text-[8rem]'>👨🏽‍💻</p> */}

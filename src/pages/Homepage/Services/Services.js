@@ -14,6 +14,13 @@ const Services = () => {
     },
     {
       id: 2,
+      service: "Mobile App Development",
+      details:
+        "I’ve built fast, user-friendly apps with React Native and Expo, turning ideas into smooth, engaging mobile experiences. I use tools like NativeWind, TypeScript, React Navigation, and Expo APIs to create clean, high-performing apps focused on great design, performance, and innovation.",
+    },
+
+    {
+      id: 3,
       service: "Database Management",
       details:
         "I’ve worked with Firebase (Firestore and Realtime Database) for real-time syncing and auth in mobile and web apps. I also use Supabase for scalable relational data, and have experience with SQLite, MongoDB, and PostgreSQL for flexible backend solutions based on project needs.",

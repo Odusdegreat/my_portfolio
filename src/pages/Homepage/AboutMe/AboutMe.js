@@ -18,19 +18,14 @@ const AboutMe = () => {
       </SectionHead>
 
       <p className="text-accent max-w-[800px]">
-        My journey into software engineering began with a passion for intuitive
-        design and real-world problem-solving. I specialize in front-end
-        development using HTML, CSS, JavaScript, and frameworks like React,
-        Next.js, Angular, and React Native. With a strong focus on performance
-        and user experience, I’ve built responsive web and mobile apps like a
-        GitHub user search tool, a Deezer-powered music player, and a
-        Dropbox-style file storage system. I also work with TypeScript, Tailwind
-        CSS, Firebase, and integrate tools like Clerk, Dojah, and various
-        RESTful APIs. Skilled in Figma, I design clean interfaces and bring them
-        to life through code. Recently, I’ve been exploring AI and Web3
-        interested in how they’re reshaping the future of software development.
-        Whether solo or on a team, I’m driven to create accessible, impactful
-        digital experiences.
+        My journey into software engineering began with a passion for design and
+        problem-solving. I specialize in Front-end and Mobile development using
+        React, Next.js, and React Native. I’ve built projects like the Inveto
+        investment app, a GitHub user search tool, a Deezer-powered music
+        player, and a Dropbox-style file system. Skilled in TypeScript, Tailwind
+        CSS, Firebase, and Figma, I focus on performance, usability, and clean
+        design. Recently, I’ve been exploring AI and Web3 to build more
+        innovative digital experiences.
       </p>
       <div className="flex">
         <a

@@ -2,7 +2,7 @@ export const projectData = [
   {
     name: "Endowpay",
     img: "endowpay.png",
-    liveLink: "https://endowpay-customerapp.onrender.com/",
+    liveLink: "https://endowpay.app/sign-up",
     description:
       "EndowPay is a digital finance platform that enables users to make fast, secure payments, transfer money seamlessly, and pay utility bills with ease all in one intuitive experience.",
   },
@@ -13,6 +13,22 @@ export const projectData = [
   //   liveLink: "https://www.carsuaemarket.com/en",
   //   description: "...",
   // },
+
+  {
+    name: "EduChain",
+    img: "educhain.png",
+    liveLink: "https://myeduchain.vercel.app/",
+    description:
+      "Educhain is a blockchain-powered platform that helps schools and organizations issue, verify, and share digital certificates easily, making credentials secure, authentic, and tamper-proof for students and institutions.",
+  },
+
+  {
+    name: "AfroWavs Music Library",
+    img: "afrowavslibrary.png",
+    liveLink: "https://afrowavs-music-library.lovable.app",
+    description:
+      "Afrowavs is a digital platform that celebrates African music and culture, showcasing artists, sounds, and stories from across the continent and beyond.",
+  },
 ];
 
 export const mobileProjectData = [
@@ -37,12 +53,12 @@ export const mobileProjectData = [
     description:
       "An interactive music player that lets users browse songs, play tracks, view albums and manage playlists with a smooth, intuitive experience.",
   },
+
   {
-    name: "Fundify",
-    img: "Fundify (2).png",
-    liveLink:
-      "https://www.figma.com/design/MUs6fFDeCmA2wJEPqMOP40/Fundify-Fintech-App?node-id=69-10988&t=PIT6PmNWE2XeNnrx-0",
+    name: "Inveto",
+    img: "inveto.png",
+    liveLink: "https://inveto--vifi5arvh0.expo.app/",
     description:
-      "A modern wallet and crowdfunding app design with crypto integration, sleek dashboards, and seamless financial management flow.",
+      "Inveto is a modern investment platform that helps users manage, grow, and track their finances easily. It offers tools for saving, investing, and monitoring portfolios — making smart investing simple, secure, and accessible to everyone.",
   },
 ];

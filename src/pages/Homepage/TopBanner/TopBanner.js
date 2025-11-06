@@ -11,14 +11,14 @@ const TopBanner = () => {
       <SectionTitle props={props} />
       <h1 className="lg:text-[65px] lg:leading-[75px] md:text-[50px] md:leading-[60px] text-[28px] leading-[40px]">
         Hey! I'm <span className="text-primary">Oluwatobi Odubote</span>,<br />{" "}
-        A Frontend Developer.
+        A Frontend and Mobile Developer.
       </h1>
       <p className="mt-6 lg:text-2xl md:text-2xl text-md"></p>
       <div className="flex lg:flex-row md:flex-row flex-col justify-between lg:items-end md:items-end items-center">
         <div className="flex lg:gap-28 md:gap-24 gap-20 lg:mt-20 md:mt-20 mt-12">
           <div>
             <span className="text-primary lg:text-[70px] md:text-[60px] text-[50px] leading-[100px]">
-              1+
+              2+
             </span>
             <p className="uppercase text-accent -mt-2">
               Years of
