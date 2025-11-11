@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ProjectModal from "../../../components/Modals/ProjectModal";
 import SectionTitle from "../../../components/Typography/SectionTitle";
 import SectionHead from "../../../components/Typography/SectionHead";
-import { Link } from "react-router-dom";
+
 import { mobileProjectData } from "./data";
 
 const MobileProjects = () => {
