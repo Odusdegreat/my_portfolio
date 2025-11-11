@@ -57,7 +57,7 @@ export const mobileProjectData = [
   {
     name: "Inveto",
     img: "inveto.png",
-    liveLink: "https://inveto--vifi5arvh0.expo.app/",
+    liveLink: "https://inveto.expo.app/",
     description:
       "Inveto is a modern investment platform that helps users manage, grow, and track their finances easily. It offers tools for saving, investing, and monitoring portfolios — making smart investing simple, secure, and accessible to everyone.",
   },
