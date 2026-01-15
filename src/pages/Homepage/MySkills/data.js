@@ -102,6 +102,19 @@ export const skillsData = [
   //     },
   //   ],
   // },
+  {
+    setsName: "Backend",
+    skillSet: [
+      {
+        icon: "nodejs.png",
+        name: "Nodejs",
+      },
+      {
+        icon: "python.png",
+        name: "Python",
+      },
+    ],
+  },
 
   {
     setsName: "Tools",

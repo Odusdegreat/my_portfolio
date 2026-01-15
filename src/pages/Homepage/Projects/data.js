@@ -25,7 +25,7 @@ export const projectData = [
   {
     name: "AfroWavs Music Library",
     img: "afrowavslibrary.png",
-    liveLink: "https://afrowavs-music-library.lovable.app",
+    liveLink: "https://afrowavs.netlify.app/",
     description:
       "Afrowavs is a digital platform that celebrates African music and culture, showcasing artists, sounds, and stories from across the continent and beyond.",
   },
