@@ -12,20 +12,17 @@ const AboutMe = () => {
       <SectionTitle props={props} />
       <SectionHead>
         Every successful career is built on
-        <span className="text-primary"> passion</span>; it’s the driving force
-        that transforms curiosity into expertise and aspirations into
+        <span className="text-primary"> passion</span>; it&apos;s the driving
+        force that transforms curiosity into expertise and aspirations into
         milestones.
       </SectionHead>
 
       <p className="text-accent max-w-[800px]">
-        My journey into software engineering began with a passion for design and
-        problem-solving. I specialize in Front-end and Mobile development using
-        React, Next.js, and React Native. I’ve built projects like the Inveto
-        investment app, a GitHub user search tool, a Deezer-powered music
-        player, and a Dropbox-style file system. Skilled in TypeScript, Tailwind
-        CSS, Firebase, and Figma, I focus on performance, usability, and clean
-        design. Recently, I’ve been exploring AI and Web3 to build more
-        innovative digital experiences.
+        A Software Engineer focused on building performant web and mobile
+        applications using React, Next.js, React Native, Django, and Node.js. I
+        care deeply about clean architecture, intuitive design, and scalable
+        systems — and I&apos;m currently exploring AI and Web3 to build smarter
+        digital experiences.
       </p>
       <div className="flex">
         <a
