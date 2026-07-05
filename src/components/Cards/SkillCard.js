@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaServer, FaCube, FaTools, FaMobileAlt } from 'react-icons/fa';
+import { FaCube, FaTools, FaMobileAlt } from 'react-icons/fa';
 import { HiOutlineCode, HiOutlineDatabase } from 'react-icons/hi';
 import { BsServer } from 'react-icons/bs';
 
