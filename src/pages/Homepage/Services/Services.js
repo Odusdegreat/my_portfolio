@@ -8,9 +8,9 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      service: "Frontend Development",
+      service: "Web Development",
       details:
-        "I’m a front-end developer specializing in React, Next.js, Angular, and React Native. I build fast, scalable web and mobile apps using clean, maintainable code with HTML, CSS, JavaScript, and TypeScript. I style with Tailwind CSS, design in Figma, and manage state with Redux Toolkit, Context API, and Angular Services.",
+        "I build full-stack web applications with React, Next.js, and TypeScript, crafting responsive UIs with Tailwind CSS and Framer Motion. On the backend, I work with Node.js, NestJS, and Python, designing RESTful APIs and managing data with both PostgreSQL and MongoDB.",
     },
     {
       id: 2,
@@ -18,7 +18,6 @@ const Services = () => {
       details:
         "I’ve built fast, user-friendly apps with React Native and Expo, turning ideas into smooth, engaging mobile experiences. I use tools like NativeWind, TypeScript, React Navigation, and Expo APIs to create clean, high-performing apps focused on great design, performance, and innovation.",
     },
-
     {
       id: 3,
       service: "Database Management",
@@ -45,7 +44,6 @@ const Services = () => {
             data-aos-delay={`${(index % 6) * 100 + 100}`}
           >
             {index === 0 && <FiCode className="text-[40px]" />}
-
             {index === 1 && <HiOutlineDatabase className="text-[40px]" />}
             {index === 2 && <FiUploadCloud className="text-[40px]" />}
             <div>

@@ -1,8 +1,7 @@
 import React from 'react'
-import { FaServer } from 'react-icons/fa';
-import { HiOutlineCode } from 'react-icons/hi';
+import { FaServer, FaCube, FaTools, FaMobileAlt } from 'react-icons/fa';
+import { HiOutlineCode, HiOutlineDatabase } from 'react-icons/hi';
 import { BsServer } from 'react-icons/bs';
-import { MdSettingsSuggest } from 'react-icons/md';
 
 const SkillCard = ({ sets, index }) => {
     const { skillSet, setsName } = sets;
@@ -10,9 +9,11 @@ const SkillCard = ({ sets, index }) => {
         <div>
             <h2 className='text-2xl mb-6 flex items-center gap-4'>
                 {index===0 &&<HiOutlineCode />}
-                {index===1 && <FaServer/>}
-                {index===2 && <MdSettingsSuggest/>}
+                {index===1 && <FaMobileAlt/>}
+                {index===2 && <HiOutlineDatabase/>}
                 {index===3 && <BsServer/>}
+                {index===4 && <FaCube/>}
+                {index===5 && <FaTools/>}
                 {setsName}
             </h2>
             <div className='skills'>

@@ -12,10 +12,10 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        "service_nfwgf6d", // ✅ Your Service ID
-        "template_z5o4tcz", // ✅ Your Template ID
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        "gGRSkfm9INKemS0kP" // ✅ Your Public Key
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -24,7 +24,7 @@ const ContactMe = () => {
           toast.success("Message sent successfully ✅");
         },
         (error) => {
-          console.error(error.text);
+          console.error("EmailJS error:", error.text || error.message || error);
           toast.error("Message failed to send ❌");
         }
       );

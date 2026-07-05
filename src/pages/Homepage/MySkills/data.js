@@ -43,6 +43,10 @@ export const skillsData = [
         icon: "rest.png",
         name: "REST API",
       },
+      {
+        icon: "threejs.svg",
+        name: "Three.js",
+      },
     ],
   },
 
@@ -77,6 +81,10 @@ export const skillsData = [
       {
         icon: "postgresql.png",
         name: "PostgreSQL",
+      },
+      {
+        icon: "mongodb.png",
+        name: "MongoDB",
       },
     ],
   },
@@ -113,9 +121,30 @@ export const skillsData = [
         icon: "python.png",
         name: "Python",
       },
+      {
+        icon: "nestjs.svg",
+        name: "Nest.js",
+      },
     ],
   },
 
+  {
+    setsName: "Web 3",
+    skillSet: [
+      {
+        icon: "solidity.svg",
+        name: "Solidity",
+      },
+      {
+        icon: "ethers.svg",
+        name: "Ethers.js",
+      },
+      {
+        icon: "hardhat.svg",
+        name: "Hardhat",
+      },
+    ],
+  },
   {
     setsName: "Tools",
     skillSet: [
@@ -126,6 +155,14 @@ export const skillsData = [
       {
         icon: "github.png",
         name: "GitHub",
+      },
+      {
+        icon: "docker.png",
+        name: "Docker",
+      },
+      {
+        icon: "vercel.ico",
+        name: "Vercel",
       },
     ],
   },
