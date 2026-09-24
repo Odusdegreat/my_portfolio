@@ -1,5 +1,6 @@
-import React, { Suspense } from 'react'
-import { Outlet } from 'react-router-dom'
+import React, { Suspense, useEffect } from 'react'
+import { Outlet, useLocation } from 'react-router-dom'
+import AOS from 'aos'
 import Loader from '../components/Loader/Loader'
 import Navbar from '../components/Navbar/Navbar'
 import Profile from '../pages/Homepage/Profile/Profile'
@@ -7,6 +8,12 @@ import MobileNav from '../components/Navbar/MobileNav'
 import Footer from '../components/Footer/Footer'
 
 const Main = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    AOS.refresh();
+  }, [location]);
+
   return (
     <div className="max-w-[1440px] mx-auto flex gap-10 lg:px-4 md:px-8 px-4">
       <Suspense fallback={<Loader />}>

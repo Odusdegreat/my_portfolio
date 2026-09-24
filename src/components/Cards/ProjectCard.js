@@ -1,19 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../assets/styles/project-card.css'
-// import { HiExternalLink, HiServer } from 'react-icons/hi'
-// import { GrGithub } from 'react-icons/gr'
 
 const ProjectCard = ({ project, setModal, index }) => {
+    const [open, setOpen] = useState(false);
     const { name, img, liveLink, description, iosLink, androidLink } = project;
     return (
         <div
-            className="h-[300px] project-card hover:shadow-lg border-[1px] border-accent rounded-2xl"
+            className={`h-[300px] project-card hover:shadow-lg border-[1px] border-accent rounded-2xl ${open ? "is-open" : ""}`}
             data-aos="fade-up"
             data-aos-delay={`${((index) % 2) * 100 + 100}`}
+            onClick={() => setOpen(o => !o)}
         >
-            <img src={require(`../../assets/images/projects/${img}`)} alt="" className='h-full w-full object-contain p-3' />
+            <img src={require(`../../assets/images/projects/${img}`)} alt={name} className='h-full w-full object-contain p-3' />
 
-            <div className='project-card-content'>
+            <div className='project-card-content' onClick={(e) => e.stopPropagation()}>
+                <button
+                    className="absolute right-3 top-3 z-30 h-8 w-8 rounded-full bg-black/40 text-white hover:bg-black/70"
+                    onClick={() => setOpen(false)}
+                    aria-label={`Close ${name} details`}
+                >✕</button>
                 <div className='m-7'>
                     <h1 className='text-2xl font-bold'>{name}</h1>
                     <p className='mt-3'>{description}</p>

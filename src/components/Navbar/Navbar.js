@@ -42,16 +42,10 @@ const Navbar = () => {
         },
     ]
 
-    for (let nav of navItems) {
-        const scrollToSection = (e) => {
-            e.preventDefault();
-            const section = document.querySelector(`${nav?.link}`);
-            section.scrollIntoView({ behavior: 'smooth' });
-        };
-
-        const link = document.querySelector(`a[href="${nav?.link}"]`);
-        link?.addEventListener('click', scrollToSection);
-    }
+    const scrollToSection = (e, link) => {
+        e.preventDefault();
+        document.querySelector(link)?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
         <section className='flex flex-col gap-4 sticky top-16'>
@@ -70,7 +64,7 @@ const Navbar = () => {
             {path === '' &&
                 <div className='flex flex-col gap-3 py-6 px-3 border-[1px] border-accent rounded-full'>
                     {
-                        navItems?.map(({ icon, link }, index) => <a key={index} href={link} className='icon' data-title={link?.split('#')[1]}>
+                        navItems?.map(({ icon, link }, index) => <a key={index} href={link} onClick={(e) => scrollToSection(e, link)} className='icon' data-title={link?.split('#')[1]}>
                             <lord-icon
                                 src={icon}
                                 trigger="hover"

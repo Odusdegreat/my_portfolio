@@ -12,7 +12,7 @@ const Profile = () => {
       {/* <p className='text-center text-[8rem]'>👨🏽‍💻</p> */}
       <img
         src={odus}
-        alt=""
+        alt="Oluwatobi Odubote"
         className="h-[250px] w-[250px] object-cover rounded-3xl mx-auto"
       />
       <div className="flex flex-col items-center">

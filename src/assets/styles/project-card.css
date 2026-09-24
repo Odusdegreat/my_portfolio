@@ -1,5 +1,6 @@
 .project-card {
     position: relative;
+    cursor: pointer;
 }
 
 .project-card-content {
@@ -13,7 +14,8 @@
     bottom: 0;
 }
 
-.project-card:hover .project-card-content {
+.project-card:hover .project-card-content,
+.project-card.is-open .project-card-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +40,8 @@
     display: none;
 }
 
-.project-card:hover .overlay {
+.project-card:hover .overlay,
+.project-card.is-open .overlay {
     display: block;
     background-color: rgb(46, 46, 46);
     opacity: .95;

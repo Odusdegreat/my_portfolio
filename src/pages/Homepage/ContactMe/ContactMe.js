@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import SectionTitle from "../../../components/Typography/SectionTitle";
@@ -6,9 +6,11 @@ import SectionHead from "../../../components/Typography/SectionHead";
 
 const ContactMe = () => {
   const form = useRef();
+  const [sending, setSending] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setSending(true);
 
     emailjs
       .sendForm(
@@ -27,7 +29,8 @@ const ContactMe = () => {
           console.error("EmailJS error:", error.text || error.message || error);
           toast.error("Message failed to send ❌");
         }
-      );
+      )
+      .finally(() => setSending(false));
   };
 
   const props = {
@@ -87,7 +90,8 @@ const ContactMe = () => {
         <div className="flex justify-center">
           <input
             type="submit"
-            value="Send"
+            value={sending ? "Sending..." : "Send"}
+            disabled={sending}
             className="btn btn-wide btn-primary rounded-md mt-10 px-6"
           />
         </div>

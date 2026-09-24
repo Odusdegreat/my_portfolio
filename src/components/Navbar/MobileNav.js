@@ -1,10 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const MobileNav = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const goTo = (path) => {
+    navigate(path);
+    const id = path.split("#")[1];
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }, 300);
+  };
+
+  const goHome = (e) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="flex flex-row justify-between py-3 px-9 bg-base-100 border-[1px] border-[#bbb] rounded-full">
-      <Link to="/" className="icon flex flex-col items-center gap-1">
+      <Link to="/" onClick={goHome} className="icon flex flex-col items-center gap-1">
         <lord-icon
           src="https://cdn.lordicon.com/osuxyevn.json"
           trigger="hover"
@@ -36,7 +54,10 @@ const MobileNav = () => {
                 </lord-icon>
                 <span className='text-xs'>Blogs</span>
             </Link> */}
-      <Link to="/#skills" className="icon flex flex-col items-center gap-1">
+      <button
+        onClick={() => goTo("/#skills")}
+        className="icon flex flex-col items-center gap-1"
+      >
         <lord-icon
           src="https://cdn.lordicon.com/svbmmyue.json"
           trigger="hover"
@@ -44,8 +65,11 @@ const MobileNav = () => {
           style={{ width: "24px", height: "24px" }}
         ></lord-icon>
         <span className="text-xs">Skills</span>
-      </Link>
-      <Link to="/projects" className="icon flex flex-col items-center gap-1">
+      </button>
+      <button
+        onClick={() => goTo("/#projects")}
+        className="icon flex flex-col items-center gap-1"
+      >
         <lord-icon
           src="https://cdn.lordicon.com/fpmskzsv.json"
           trigger="hover"
@@ -53,7 +77,7 @@ const MobileNav = () => {
           style={{ width: "24px", height: "24px" }}
         ></lord-icon>
         <span className="text-xs">Projects</span>
-      </Link>
+      </button>
     </div>
   );
 };

@@ -13,7 +13,6 @@ const TopBanner = () => {
         Hey! I'm <span className="text-primary">Oluwatobi Odubote</span>,<br />{" "}
         A Software Engineer.
       </h1>
-      <p className="mt-6 lg:text-2xl md:text-2xl text-md"></p>
       <div className="flex lg:flex-row md:flex-row flex-col justify-between lg:items-end md:items-end items-center">
         <div className="flex lg:gap-28 md:gap-24 gap-20 lg:mt-20 md:mt-20 mt-12">
           <div>

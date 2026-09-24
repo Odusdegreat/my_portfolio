@@ -1,14 +1,15 @@
 import ProjectCard from "../../../components/Cards/ProjectCard";
 import React, { useState } from "react";
+import ProjectModal from "../../../components/Modals/ProjectModal";
 import SectionHead from "../../../components/Typography/SectionHead";
 import { projectData } from "./data";
 
 const Projects = () => {
-  const [, setModal] = useState([]);
+  const [modal, setModal] = useState(null);
   const projects = projectData;
 
   return (
-    <section id="projects" className="mb-20">
+    <section className="mb-20">
       <SectionHead>
         <span className="text-primary">Collaborations</span>
       </SectionHead>
@@ -22,6 +23,7 @@ const Projects = () => {
           />
         ))}
       </div>
+      <ProjectModal data={modal} setModal={setModal} />
     </section>
   );
 };

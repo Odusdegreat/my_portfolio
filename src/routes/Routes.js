@@ -8,7 +8,6 @@ const Home = lazy(() => import("../pages/Homepage/Homepage"));
 // const Blogs = lazy(() => import("../pages/Blogs/Blogs"));
 // const BlogDetails = lazy(() => import("../pages/Blogs/BlogDetails"));
 // const Login = lazy(() => import("../pages/Login/Login"));
-const Projects = lazy(() => import("../pages/Projects/ProjectPage.js"));
 const Resource = lazy(() => import("../pages/ResourcePage/Resources.js"));
 
 // const Dashboard = lazy(() => import("../pages/Profile/Dashboard"));
@@ -33,10 +32,6 @@ export const routes = createBrowserRouter([
             //     path: '/blogs',
             //     element: <Blogs />
             // },
-            {
-                path: '/projects/:id',
-                element: <Projects />
-            },
             {
                 path: '/resource',
                 element: <Resource />

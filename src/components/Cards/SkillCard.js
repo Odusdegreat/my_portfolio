@@ -19,8 +19,8 @@ const SkillCard = ({ sets, index }) => {
             <div className='skills'>
                 {
                     skillSet?.map(({ icon, name }, index) => <div key={index} className='flex flex-col items-center hover:text-primary' data-aos="fade-up" data-aos-delay={`${((index) % 6) * 100 + 100}`}>
-                        <div className='h-36 w-24 flex items-center justify-center rounded-3xl glow'>
-                            <img src={require(`../../assets/images/skills/${icon}`)} alt="icon" className='h-14 w-14 object-contain' />
+                        <div className='h-36 w-full max-w-24 flex items-center justify-center rounded-3xl glow'>
+                            <img src={require(`../../assets/images/skills/${icon}`)} alt={name} className='h-14 w-14 object-contain' />
                         </div>
                         <h1 className='text-center mt-4'>{name}</h1>
                     </div>)
