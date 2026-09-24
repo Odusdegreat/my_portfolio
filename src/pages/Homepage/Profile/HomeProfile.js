@@ -4,15 +4,16 @@ import SocialLinks from "../../../components/SocialLinks";
 
 const HomeProfile = () => {
   return (
-    <div className="w-full px-4 lg:hidden flex md:flex-row items-center flex-col py-6">
-      <div className="md:w-1/2 w-full flex md:flex-col flex-row justify-center items-center mb-6">
-        <div className="flex md:flex-col flex-row justify-between md:h-28 h-auto md:w-auto w-full">
-          <h2 className="text-white text-4xl font-bold ">Oluwatobi</h2>
-          <h2 className="text-white leading-[20px]">Software Engineer</h2>
-        </div>
-        <div className="md:mt-6 md:mb-6 mt-4">
+    <div className="w-full px-4 lg:hidden flex md:flex-row items-center flex-col py-6 gap-8">
+      <div className="md:w-1/2 w-full flex flex-col items-center md:items-start gap-3">
+        <h2 className="text-white text-4xl font-bold">Oluwatobi</h2>
+        <h2 className="text-white leading-[20px]">Software Engineer</h2>
+        <div className="my-2">
           <SocialLinks />
         </div>
+        <p className="text-white text-sm text-center md:text-left">
+          tobiodubote@gmail.com · Lagos, Nigeria
+        </p>
       </div>
       <div className="md:w-1/2">
         <img
