@@ -14,7 +14,7 @@ const MobileNav = () => {
         <span className="text-xs">Home</span>
       </Link>
       <a
-        href="https://docs.google.com/document/d/1exbVtHR29vz7ALWcVdRg4xx_qeFrnw60fgA_pReKmmE/preview"
+        href="https://docs.google.com/document/d/1exbVtHR29vz7ALWcVdRg4xx_qeFrnw60fgA_pReKmmE/export?format=pdf"
         target="_blank"
         rel="noreferrer"
         className="icon flex flex-col items-center gap-1"
@@ -36,6 +36,15 @@ const MobileNav = () => {
                 </lord-icon>
                 <span className='text-xs'>Blogs</span>
             </Link> */}
+      <Link to="/#skills" className="icon flex flex-col items-center gap-1">
+        <lord-icon
+          src="https://cdn.lordicon.com/svbmmyue.json"
+          trigger="hover"
+          class="current-color"
+          style={{ width: "24px", height: "24px" }}
+        ></lord-icon>
+        <span className="text-xs">Skills</span>
+      </Link>
       <Link to="/projects" className="icon flex flex-col items-center gap-1">
         <lord-icon
           src="https://cdn.lordicon.com/fpmskzsv.json"

@@ -51,6 +51,10 @@ export const skillsData = [
         icon: "threejs.svg",
         name: "Three.js",
       },
+      {
+        icon: "react-pdf.png",
+        name: "React PDF",
+      },
     ],
   },
 
@@ -69,6 +73,10 @@ export const skillsData = [
         icon: "nativewind.svg",
         name: "NativeWind",
       },
+      {
+        icon: "googleplay.svg",
+        name: "Google Play Console",
+      },
     ],
   },
   {
@@ -85,6 +93,10 @@ export const skillsData = [
       {
         icon: "postgresql.png",
         name: "PostgreSQL",
+      },
+      {
+        icon: "neon.svg",
+        name: "Neon",
       },
       {
         icon: "mongodb.png",
@@ -199,6 +211,14 @@ export const skillsData = [
       {
         icon: "render.svg",
         name: "Render",
+      },
+      {
+        icon: "resend.svg",
+        name: "Resend",
+      },
+      {
+        icon: "emailjs.svg",
+        name: "EmailJS",
       },
     ],
   },
