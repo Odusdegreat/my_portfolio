@@ -10,19 +10,19 @@ const Services = () => {
       id: 1,
       service: "Web Development",
       details:
-        "I build full-stack web applications with React, Next.js, and TypeScript, crafting responsive UIs with Tailwind CSS and Framer Motion. On the backend, I work with Node.js, NestJS, and Python, designing RESTful APIs and managing data with both PostgreSQL and MongoDB.",
+        "I build full-stack web apps with React, Next.js, and TypeScript, backed by Node.js, NestJS, and Python with PostgreSQL or MongoDB.",
     },
     {
       id: 2,
       service: "Mobile App Development",
       details:
-        "I’ve built fast, user-friendly apps with React Native and Expo, turning ideas into smooth, engaging mobile experiences. I use tools like NativeWind, TypeScript, React Navigation, and Expo APIs to create clean, high-performing apps focused on great design, performance, and innovation.",
+        "I build fast, user-friendly apps with React Native and Expo, using NativeWind and TypeScript for polished, high-performing experiences.",
     },
     {
       id: 3,
       service: "Database Management",
       details:
-        "I’ve worked with Firebase (Firestore and Realtime Database) for real-time syncing and auth in mobile and web apps. I also use Supabase for scalable relational data, and have experience with SQLite, MongoDB, and PostgreSQL for flexible backend solutions based on project needs.",
+        "I work with Firebase, Supabase, MongoDB, and PostgreSQL to deliver real-time syncing and scalable data solutions.",
     },
   ];
   const props = {
