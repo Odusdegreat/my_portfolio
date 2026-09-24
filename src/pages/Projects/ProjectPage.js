@@ -6,6 +6,13 @@ export const projectData = [
     description:
       "EndowPay is a digital finance platform that enables users to make fast, secure payments, transfer money seamlessly, and pay utility bills with ease all in one intuitive experience.",
   },
+  {
+    name: "Yagkive",
+    img: "yaggs.png",
+    liveLink: "https://yagkive.vercel.app/",
+    description:
+      "A full-stack e-commerce platform with a Next.js storefront and a Bun/Express API, featuring cart and order management, Paystack payments, and image uploads.",
+  },
   // You can uncomment and add more projects here as needed
   // {
   //   name: "Cars UAE MARKET",

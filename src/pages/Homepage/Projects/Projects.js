@@ -13,7 +13,7 @@ const Projects = () => {
         <span className="text-primary">Collaborations</span>
       </SectionHead>
       <div className="projects">
-        {projects?.slice(0, 4).map((project, index) => (
+        {projects?.map((project, index) => (
           <ProjectCard
             key={index}
             project={project}

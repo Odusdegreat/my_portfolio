@@ -18,6 +18,10 @@ export const skillsData = [
         icon: "react.png",
         name: "React",
       },
+      {
+        icon: "vue.svg",
+        name: "Vue.js",
+      },
 
       {
         icon: "next.png",
@@ -58,11 +62,11 @@ export const skillsData = [
         name: "React Native",
       },
       {
-        icon: "expo.png",
+        icon: "expo.svg",
         name: "Expo",
       },
       {
-        icon: "nativewind.jpg",
+        icon: "nativewind.svg",
         name: "NativeWind",
       },
     ],
@@ -118,12 +122,24 @@ export const skillsData = [
         name: "Nodejs",
       },
       {
+        icon: "express.svg",
+        name: "Express.js",
+      },
+      {
         icon: "python.png",
         name: "Python",
       },
       {
         icon: "nestjs.svg",
         name: "Nest.js",
+      },
+      {
+        icon: "csharp.svg",
+        name: "C#",
+      },
+      {
+        icon: "dotnet.svg",
+        name: ".NET",
       },
     ],
   },
@@ -163,6 +179,10 @@ export const skillsData = [
       {
         icon: "vercel.ico",
         name: "Vercel",
+      },
+      {
+        icon: "render.svg",
+        name: "Render",
       },
     ],
   },

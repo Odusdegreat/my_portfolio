@@ -20,7 +20,7 @@ const MobileProjects = () => {
         My<span className="text-primary"> Projects</span>
       </SectionHead>
       <div className="projects">
-        {projects?.slice(0, 4).map((project, index) => (
+        {projects?.map((project, index) => (
           <ProjectCard
             key={index}
             project={project}

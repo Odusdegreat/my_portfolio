@@ -61,4 +61,12 @@ export const mobileProjectData = [
     description:
       "Inveto is a modern investment platform that helps users manage, grow, and track their finances easily. It offers tools for saving, investing, and monitoring portfolios — making smart investing simple, secure, and accessible to everyone.",
   },
+
+  {
+    name: "Yagkive",
+    img: "yaggs.png",
+    liveLink: "https://yagkive.vercel.app/",
+    description:
+      "A full-stack e-commerce platform with a Next.js storefront and a Bun/Express API, featuring cart and order management, Paystack payments, and image uploads.",
+  },
 ];
