@@ -69,4 +69,12 @@ export const mobileProjectData = [
     description:
       "A full-stack e-commerce platform with a Next.js storefront and a Bun/Express API, featuring cart and order management, Paystack payments, and image uploads.",
   },
+
+  {
+    name: "Twinblueprint",
+    img: "twinblueprint.png",
+    liveLink: "https://twinblueprint.vercel.app/",
+    description:
+      "Twinblueprint (Meta-dology 3D): a lead-generation CRM for construction, architecture, and infrastructure firms selling digital-twin services. Users capture, import, and manage leads, with dashboards for pipeline metrics.",
+  },
 ];

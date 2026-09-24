@@ -24,7 +24,7 @@ export const skillsData = [
       },
 
       {
-        icon: "next.png",
+        icon: "next.svg",
         name: "Next.js",
       },
       {
@@ -79,7 +79,7 @@ export const skillsData = [
         name: "Firebase",
       },
       {
-        icon: "supabase.webp",
+        icon: "supabase.svg",
         name: "Supabase",
       },
       {
@@ -130,6 +130,10 @@ export const skillsData = [
         name: "Python",
       },
       {
+        icon: "django.svg",
+        name: "Django",
+      },
+      {
         icon: "nestjs.svg",
         name: "Nest.js",
       },
@@ -158,6 +162,18 @@ export const skillsData = [
       {
         icon: "hardhat.svg",
         name: "Hardhat",
+      },
+      {
+        icon: "walrus.svg",
+        name: "Walrus",
+      },
+      {
+        icon: "sui.svg",
+        name: "Sui",
+      },
+      {
+        icon: "move.svg",
+        name: "Move",
       },
     ],
   },
