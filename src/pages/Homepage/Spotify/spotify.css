@@ -78,8 +78,26 @@
     }
 }
 
+.spotify-pause-icon {
+    animation: spotify-pause-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes spotify-pause-pulse {
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.55;
+        transform: scale(0.9);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
-    .eq-bar {
+    .eq-bar,
+    .spotify-pause-icon {
         animation: none;
     }
 }

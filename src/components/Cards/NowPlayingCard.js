@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaSpotify } from 'react-icons/fa'
+import { FaPause, FaSpotify } from 'react-icons/fa'
 
 const NowPlayingCard = ({ track }) => {
     const { name, artist, album, image, url, isPlaying } = track
@@ -21,13 +21,14 @@ const NowPlayingCard = ({ track }) => {
             </div>
             <div className='min-w-0 w-full'>
                 <div className='flex items-center gap-2'>
-                    {isPlaying &&
-                        <span className='eq flex items-end gap-[2px] h-3'>
+                    {isPlaying ?
+                        <span aria-hidden='true' className='eq flex items-end gap-[2px] h-3'>
                             <span className='eq-bar w-[3px] h-full bg-primary rounded-sm' />
                             <span className='eq-bar w-[3px] h-full bg-primary rounded-sm' />
                             <span className='eq-bar w-[3px] h-full bg-primary rounded-sm' />
                             <span className='eq-bar w-[3px] h-full bg-primary rounded-sm' />
                         </span>
+                        : <FaPause aria-hidden='true' className='spotify-pause-icon text-primary h-3 w-3 shrink-0' />
                     }
                     <span className='text-xs uppercase tracking-widest text-primary'>{isPlaying ? 'Now Playing' : 'Paused'}</span>
                 </div>
