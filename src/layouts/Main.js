@@ -20,7 +20,7 @@ const Main = () => {
         <div className='w-[380px] lg:block hidden'>
           <Profile />
         </div>
-        <div className='lg:max-w-[1000px]'>
+        <div className='min-w-0 flex-1 lg:max-w-[1000px]'>
           <Outlet />
           <Footer/>
         </div>

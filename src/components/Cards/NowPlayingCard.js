@@ -29,7 +29,7 @@ const NowPlayingCard = ({ track }) => {
                             <span className='eq-bar w-[3px] h-full bg-primary rounded-sm' />
                         </span>
                     }
-                    <span className='text-xs uppercase tracking-widest text-primary'>Now Playing</span>
+                    <span className='text-xs uppercase tracking-widest text-primary'>{isPlaying ? 'Now Playing' : 'Paused'}</span>
                 </div>
                 <h1 className='mt-2 text-xl truncate'>{name}</h1>
                 <p className='text-accent text-sm mt-1 truncate'>{artist || 'Unknown Artist'}</p>

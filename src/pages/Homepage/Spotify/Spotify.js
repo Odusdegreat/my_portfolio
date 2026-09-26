@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { FaSpotify } from 'react-icons/fa'
 import SectionTitle from '../../../components/Typography/SectionTitle'
 import SpotifyCard from '../../../components/Cards/SpotifyCard'
@@ -8,7 +8,7 @@ import './spotify.css'
 
 const API = process.env.REACT_APP_SPOTIFY_API || 'https://spotify-api.vercel.app'
 const ENDPOINT = `${API.replace(/\/+$/, '')}/api/spotify`
-const REFRESH_INTERVAL = 300000
+const REFRESH_INTERVAL = 3000
 const SKELETON_COUNT = 5
 
 const pickList = (payload) => {
@@ -52,14 +52,18 @@ const Spotify = () => {
     const [tracks, setTracks] = useState([])
     const [nowPlaying, setNowPlaying] = useState(null)
     const [loading, setLoading] = useState(true)
+    const requestInFlight = useRef(false)
 
     const fetchTracks = useCallback(async () => {
+        if (requestInFlight.current) return
         if (!navigator.onLine) {
+            setNowPlaying(null)
             setLoading(false)
             return
         }
+        requestInFlight.current = true
         try {
-            const res = await fetch(ENDPOINT)
+            const res = await fetch(ENDPOINT, { cache: 'no-store' })
             if (!res.ok) throw new Error(`spotify ${res.status} ${JSON.stringify(await res.json().catch(() => ({})))}`)
             const data = await res.json()
             setTracks(normaliseTracks(data))
@@ -67,21 +71,30 @@ const Spotify = () => {
             setNowPlaying(current ? { ...current, isPlaying: !!data.nowPlaying.is_playing } : null)
         } catch (err) {
             console.error(err)
+            setNowPlaying(null)
         } finally {
+            requestInFlight.current = false
             setLoading(false)
         }
     }, [])
 
     useEffect(() => {
-        fetchTracks()
-        const timer = setInterval(fetchTracks, REFRESH_INTERVAL)
-        return () => clearInterval(timer)
-    }, [fetchTracks])
-
-    useEffect(() => {
-        if (isOnline) {
-            setLoading(true)
-            fetchTracks()
+        if (!isOnline) {
+            setNowPlaying(null)
+            setLoading(false)
+            return
+        }
+        const refreshIfVisible = () => {
+            if (document.visibilityState === 'visible') fetchTracks()
+        }
+        refreshIfVisible()
+        const timer = setInterval(refreshIfVisible, REFRESH_INTERVAL)
+        document.addEventListener('visibilitychange', refreshIfVisible)
+        window.addEventListener('focus', refreshIfVisible)
+        return () => {
+            clearInterval(timer)
+            document.removeEventListener('visibilitychange', refreshIfVisible)
+            window.removeEventListener('focus', refreshIfVisible)
         }
     }, [isOnline, fetchTracks])
 
