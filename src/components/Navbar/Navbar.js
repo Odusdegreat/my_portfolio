@@ -77,7 +77,7 @@ const Navbar = () => {
             }
             {path === '' &&
                 <div className='px-3 py-2 border-[1px] border-accent rounded-full'>
-                    <a href='https://docs.google.com/document/d/1exbVtHR29vz7ALWcVdRg4xx_qeFrnw60fgA_pReKmmE/export?format=pdf' target="_blank" rel="noreferrer" className='icon' data-title='Resume'>
+                    <a href='https://docs.google.com/document/d/1GnxHvW-IE0QFQ_PMLrkawgjqr3iFsMzI/edit' target="_blank" rel="noreferrer" className='icon' data-title='Resume'>
                         <lord-icon
                             src="https://cdn.lordicon.com/winbdcbm.json"
                             trigger="hover"

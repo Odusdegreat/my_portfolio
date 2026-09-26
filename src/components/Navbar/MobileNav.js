@@ -32,7 +32,7 @@ const MobileNav = () => {
         <span className="text-xs">Home</span>
       </Link>
       <a
-        href="https://docs.google.com/document/d/1exbVtHR29vz7ALWcVdRg4xx_qeFrnw60fgA_pReKmmE/export?format=pdf"
+        href="https://docs.google.com/document/d/1GnxHvW-IE0QFQ_PMLrkawgjqr3iFsMzI/edit"
         target="_blank"
         rel="noreferrer"
         className="icon flex flex-col items-center gap-1"
