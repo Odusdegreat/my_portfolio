@@ -1,8 +1,18 @@
 pipeline {
     agent any
+    parameters {
+        string(
+            name: 'SPOTIFY_API',
+            defaultValue: 'https://spotify-api-kappa-rouge.vercel.app',
+            description: 'Base URL of the spotify-api Vercel project')
+    }
     environment {
         NETLIFY_SITE_ID = 'daa01312-c6b5-490c-a943-a1125a12a7a6'
         NETLIFY_AUTH_TOKEN = credentials('netlify-token')
+        REACT_APP_EMAILJS_SERVICE_ID = credentials('emailjs-service-id')
+        REACT_APP_EMAILJS_TEMPLATE_ID = credentials('emailjs-template-id')
+        REACT_APP_EMAILJS_PUBLIC_KEY = credentials('emailjs-public-key')
+        REACT_APP_SPOTIFY_API = "${SPOTIFY_API}"
     }
     stages {
         stage('Build') {

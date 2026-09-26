@@ -2,6 +2,7 @@ import React from 'react'
 import useTitle from '../../hooks/useTitle'
 import AboutMe from './AboutMe/AboutMe'
 import MySkills from './MySkills/MySkills'
+import Spotify from './Spotify/Spotify'
 import Projects from './Projects/Projects'
 import MobileProjects from './Projects/MobileProjects'
 import Services from './Services/Services'
@@ -20,6 +21,7 @@ const Homepage = () => {
       <MobileProjects />
       <Projects />
       <MySkills />
+      <Spotify />
       <ContactMe />
     </div >
   )
